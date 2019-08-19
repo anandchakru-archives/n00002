@@ -66,8 +66,8 @@
             if (photo.tags && photo.tags.length) {
               photo.tags.forEach(function (tag) {
                 if (tag && ('bg' === tag.toLowerCase() || 'background' === tag.toLowerCase())) {
-                  $("header.masthead").css("background-image", "linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('" + photo.url + "')");
-                  $("header.masthead").css("background-image", "-webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url('" + photo.url + "')");
+                  $("header.masthead").css("background-image", "linear-gradient(to bottom, #{fade-out($brown, .6)} 0%,#{fade-out($brown, .6)} 100%), url('" + photo.url + "')");
+                  $("header.masthead").css("background-image", "-webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.4)), to(rgba(92, 77, 66, 0.4))), url('" + photo.url + "')");
                 }
               });
             }
